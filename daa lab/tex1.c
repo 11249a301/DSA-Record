@@ -29,14 +29,14 @@ for(int i=0;i<n;i++)
     scanf("%d" "%d",&itm[i].weight,&itm[i].profit);
     itm [i].ratio=(itm[i].profit)/(itm[i].weight);
 }
-sort(item,n);
+sort(itm,n);
 float totalprofit=0.0;
 for(int i=0;i<n;i++){
-    if(c>=item[i].weight){
-        totalprofit +=item[i].value;
-        c-=item[i].weight;}
+    if(c>=itm[i].weight){
+        totalprofit +=itm[i].profit;
+        c-=itm[i].weight;}
         else{
-            totalprofit +=item[i].ratio*c;
+            totalprofit +=itm[i].ratio*c;
             break;
         }
 }
