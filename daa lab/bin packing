@@ -14,7 +14,7 @@ for(int i=0;i<n;i++)
         if(bin[j]>=items[i])
          {
             bin[j]-=items[i];
-            printf("item %d placed in b8in %d\n",items[i],j+1);
+            printf("item %d placed in bin %d\n",items[i],j+1);
             placed=1;
             break;
          }
